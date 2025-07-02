@@ -39,7 +39,7 @@ export const FundraiserComponent = () => {
       const maker = program.provider.wallet.publicKey;
       const mintToRaise = MINT; // The mint for the SPL token
       const amountToRaise  = new BN(1000000); // Target amount for the fundraiser
-      const duration = 1; // Duration in days
+      const duration = 0; // Duration in days
 
       const [fundraiser, bump] = PublicKey.findProgramAddressSync(
         [Buffer.from('fundraiser'), maker.toBuffer()],
